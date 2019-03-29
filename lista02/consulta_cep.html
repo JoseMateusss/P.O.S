@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Programação Orientada a Serviços - Alba Lopes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper"  class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="#" id="menu-cep">Consultar CEP</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+			<form class="form-inline">
+			<div class="form-group mb-2">
+				 <label for="cep">CEP:</label>
+				 <input type="text" id="cep"  class="form-control" placeholder="sem pontos ou traços"/>
+			</div>
+			
+			<button type="button" id="botao-consultar" class="btn btn-primary mb-2">Consultar</button>
+			</form>
+			<div id="mensagem" class="alert" role="alert">
+			</div>
+			<div id="conteudo" class="container-fluid">
+				<table class="table table-bordered">
+					<tr><td>Logradouro: </td><td id="logradouro"></td></tr>
+					<tr><td>Complemento: </td><td id="complemento"></td></tr>
+					<tr><td>Bairro: </td><td id="bairro"></td></tr>
+					<tr><td>Localidade: </td><td id="localidade"></td></tr>
+					<tr><td>UF: </td><td id="uf"></td></tr>
+				</table>
+				<button type="button" id="botao-limpar" class="btn btn-primary mb-2">Limpar</button>
+			
+			</div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/servicos_cep.js"></script>
+
+</body>
+
+</html>
